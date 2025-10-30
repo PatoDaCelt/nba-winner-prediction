@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def process_data(input_path="../data/raw/nba_games.csv", output_path="../data/clean/nba_clean.csv"):
+def process_data(input_path="./data/raw/nba_games.csv", output_path="./data/clean/nba_clean.csv"):
     """Limpia y prepara los datos obtenidos para el modelo de predicción"""
     
     # Crear carpeta de salida
@@ -26,6 +26,7 @@ def process_data(input_path="../data/raw/nba_games.csv", output_path="../data/cl
         "REB",
         "AST",
         "FG_PCT",
+        "FT_PCT",
         "PLUS_MINUS"
     ]
     df = df[columns]

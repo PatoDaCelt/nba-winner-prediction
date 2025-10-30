@@ -20,8 +20,8 @@ def get_recent_games(days=30, retries=3):
     print(f"Obteniendo juegos de la temporada {season} de los últimos {days} días...")
       
     # Crear carpeta si no existe
-    os.makedirs("../data/raw", exist_ok=True)
-    output_path = "../data/raw/nba_games.csv"
+    os.makedirs("./data/raw", exist_ok=True)
+    output_path = "./data/raw/nba_games.csv"
     
     for attempt in range(retries):
         try:

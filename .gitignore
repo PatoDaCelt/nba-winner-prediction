@@ -2,6 +2,8 @@
 __pycache__/
 *.py[codz]
 *$py.class
+/data
+/models
 
 # C extensions
 *.so
@@ -77,7 +79,6 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-/data
 
 # IPython
 profile_default/
